@@ -1,0 +1,126 @@
+<!-- Template HTML 5... -->
+
+
+<!--
+|| Template básico para aprender html5 creado por Gabz Rêveur ||
+*En todas las coincidencias de "foo" se utilizarán los archivos y/o información real del proyecto especifico que requiera cada usuario
+* Ej. para un sitio web de "Eventos GDL" se cambiará "<title> foo | Gabz Rêveur template </title>" por "<title>Eventos GDL</title>"
+
+IMPORTANTE: Todos los tags o etiquetas de html tendrán siemptre la siquiente forma
+<tag> -> abre tag
+</tag> -> cierra tag
+-->
+<!DOCTYPE HTML>
+<!-- DEFINE EL TIPO DE DOCUMENTO COMO HTML5 //Gabz Rêveur -->
+<!-- FORMA PARTE DE LA ESTRUCTURA BÁSICA EN HTML5-->
+
+<html>
+<!-- -html-|tag| Indica el inicio del codigo html //Gabz Rêveur -->
+
+	<head>
+		<!-- -head-|tag| | CABECERA PRINCIPAL- Aquí se llaman a todos los recursos necesarios para mi pag. web. //Gabz Rêveur -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- tag -meta- | Define el charset o configuración de caracteres a utilizar UTF-8 -> Contiene caracteres en español //Gabz Rêveur -->
+
+		<title> Foo | Gabz Rêveur template</title>
+		<!-- -title-|tag| | Titulo de tu sitio web, este sirve como referencia al explorador //Gabz Rêveur -->
+
+		<link rel="stylesheet" href="foo.css" >
+		<!-- -link-|tag| | Obtiene recursos externos para ser utilizados en el sitio web, en este caso la hoja de estilo que se referencía en href  //Gabz Rêveur -->
+		<!-- nota: se recomienta crear una carpeta para las hojas de estilo (css/ en este caso), teniendo de esta manera más orden en el código //Gabz Rêveur -->
+	</head>
+
+	<body>
+	<!-- -body-|tag| Cuerpo de la página || Básicamente todo lo que se ve en el interior del sitio web //Gabz Rêveur -->
+		<header>
+		<!-- FORMA PARTE DE LA ESTRUCTURA BÁSICA EN HTML5-->
+		<!-- -header- |tag| Parte superior de mi sitio web de acuerdo a html5 //Gabz Rêveur -->
+
+		<div id="logo">
+			<img src="img/foo.png" alt="Logo de la pagina foo " />
+			<!-- -img- |tag| Llama a una imagen, este tag requiere de un atributo "src" con la ruta de la imagen y un "alt" con el detalle referente al texto alternativo de la imagen  //Gabz Rêveur -->
+			<!-- nota: se recomienta crear una carpeta para las imagenes de estilo, teniendo de esta manera más orden en el código (img/ en este caso) //Gabz Rêveur -->
+		</div>
+
+			<h1>Título foo</h1>
+			<!-- -h1- |tag| header 1 - Utilizado para crear un titulo dentro de nuestro sitio, este elemento es muy importante para el posicionamiento web//Gabz Rêveur -->
+
+			<div id="foo">
+			<!-- -div- |tag| Se utiliza para crear una división //Gabz Rêveur -->
+			<!-- "id"|atributo|  Es un identificador UNICO, es utilizado para para identificar y tener mas control sobre el elemento, en este caso el div //Gabz Rêveur -->
+					Slogan de la empresa foo
+			</div>
+
+			<nav>
+			<!-- -Nav- |tag| navegador || Contenedor de navegación y menus definido por html5  //Gabz Rêveur -->
+			<!-- FORMA PARTE DE LA ESTRUCTURA BÁSICA EN HTML5-->
+				<ul>
+				<!-- -ul- |tag| define una Unordered list o lista desordenada, siempre que sea necesario utilzar una lista se debe empezar un un "ul" o "ol" //Gabz Rêveur -->
+					<li class="menufoo">
+					<!-- -li- |tag| list item | crea un elemento o item dentro de la lista //Gabz Rêveur -->
+					<!-- "class" |atributo| define una clase para poder tener un selector que afecte a un grupo de tags definido en las hojas de estilo //Gabz Rêveur -->
+						<a href="indez-foo.html" >Home foo</a>
+						<!-- -a- |tag| anchor | Genera un hipervinculo, requiere un atributo de "href" que declarará la liga de referencia a la cual se dirige el sitio web al dar click //Gabz Rêveur -->
+
+					</li>
+					<li class="menufoo">
+						<a href="http://www.gabzreveur.com" target="_blank">gabzreveur.com</a>
+						<!-- "target" |atributo| - SElecciona la manera en que se abrira el hypervinculo, en este caso se abre en una nueva pestaña del explorador (_blank), permitiendo al usuario tener ambas paginas abiertas -->
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<!-- -section- |tag| define una  sección, se utiliza para delimitar el contenido referente al mismo tema //Gabz Rêveur -->
+			<!-- FORMA PARTE DE LA ESTRUCTURA BÁSICA EN HTML5-->
+
+			<article>
+			<!-- -article- |tag| define un articulo, se utiliza para delimitar el contenido referente al mismo tema siendo este parte de un grupo (section) //Gabz Rêveur -->
+			<!-- FORMA PARTE DE LA ESTRUCTURA BÁSICA EN HTML5 -->
+
+				<header>
+					<h2>Subtitulo foo</h2>
+					<!-- -h2- |tag| header 2 | Utilizado para crear un subtitulo, tiene las mismas propiedades que el h1 con la diferencia del tamaño de fuente. //Gabz Rêveur -->
+					<!-- nota: existen 6 headers, desde h1 hasta h6 //Gabz Rêveur-->
+				</header>
+
+				<p>Parrafo de foo</p>
+				<!-- -p- |tag|paragraph| tag que define un parrafo //Gabz Rêveur -->
+
+			</article>
+
+		</section>
+
+		<aside>
+		<!-- -aside- |tag| Define una sección lateral según html5, esta puede estar antes o despues de section //Gabz Rêveur -->
+		<!-- FORMA PARTE DE LA ESTRUCTURA BÁSICA EN HTML5 -->
+			<iframe width="420" height="315" src="https://www.youtube.com/embed/foo" frameborder="0" allowfullscreen></iframe>
+			<!-- -iframe- |tag| Llama a una sección o recurso de otro sitio web, en este caso de youtube, cuenta con varios atributos, todos dados por youtube por defecto //Gabz Rêveur -->
+		</aside>
+
+		<footer>
+		<!-- -footer- |tag| Genera una sección inferior del sitio web según html5 //Gabz Rêveur -->
+
+			<div id="contacto">
+				<form>
+				<!-- -form- |tag| Inserta un formulario, todos los formularios requeridos deberán ir dentro de un tag "form" //Gabz Rêveur -->
+					<label>Nombre:</label>
+					<!-- -label- |tag| Se utiliza para agregar etiqueta a el nombre correspondiente al input  -->
+					<input type="text" placeholder="foo" required>
+					<!-- -input- |tag| Genera una entrada del formulario, tiene diversos atributos que definen su funcionamiento eneste caso es una entrada de tipo texto con un valor por defecto (placeholder) ademas de tener un atributo para hacer al input forzoso "required" //Gabz Rêveur -->
+
+				</form>
+			</div>
+			<div id="resfoo">
+				Todos los derechos reservados <span>gabzreveur.com</span>
+				<!-- -span- |tag| Genera un contenedor, el cual, a diferencia de div,	permite que el elemento interior preceda al texto anterior sin dar un salto de linea //Gabz Rêveur -->
+
+			</div>
+		</footer>
+
+	</body>
+
+</html>
+
+<!-- ||Para cualquier duda o comentario sobre este template contactame :) - gabzreveur.com||-->
