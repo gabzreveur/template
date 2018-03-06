@@ -1,0 +1,60 @@
+/* Template CSS 3... */
+
+/*
+|| Template básico para aprender css3 (hojas de estilo versión 3) creado por Gabz Rêveur ||
+*En todas las coincidencias de "foo" se utilizarán los archivos y/o rutas reales del proyecto
+*Recuerda, para utilizar esta css en tu foo.html debesar utilizar el tag -link- de la siguiente forma:
+Dentro de  en foo.html
+
+
+IMPORTANTE: Todos los selectores deberán seguir siempre la forma:
+selector  -> selector de estructura ej. h1
+{         -> abre selector
+
+}         -> cierra selector
+
+//Gabz Rêveur */
+body   /*Selector de TAG, las propiedades definidas se aplicaran a todas las coincidencias de dicho tag //Gabz Rêveur */
+{
+  margin:0px 0px 0px 0px;  /*-margin- |Propiedad| Asigna el valor de los margenes a todos los lados del body siempre en el sentido de las manecillas del relog, arriba, derecha, abajo, izquierda//Gabz Rêveur */
+  background:#eeeeee; /*-background- |Propiedad| Asigna un color de fondo al selector, en este caso con un codigo hexadecimal//Gabz Rêveur */
+}
+
+header, section, aside, footer /*Selector multiple |,| Todos los selectores listados, serán afectados por las hojas de estilo //Gabz Rêveur */
+{
+  border:1px dotted #e34f26;  /*-border- |propiedad| Crea un borde al rededor del selector, este requiere de 3 valores, ancho, tipo y color (el orden no tiene importancia)//Gabz Rêveur */
+  padding:10px; /*padding |propiedad| Genera un espacio de separación interno en el selector, es un "margen" interno   //Gabz Rêveur */
+
+}
+header nav /*Selector desendiente - Crea un selector especifico, es decir, solamente afectara a el selector "nav" que este dentro de "header" para este caso//Gabz Rêveur */
+{
+  background:#0092bf;
+  padding:10px;
+}
+header nav a
+{
+  text-decoration:none; /*text-decoration |propiedad| - Remueve la decoración del selector, en este caso, el tag a siempre tiene un borde que sera removido con dicha propiedad//Gabz Rêveur */
+  color:rgba(255,255,255,.6); /*color |propiedad| - Asina un color al texto dentro del selector, en este caso se da con rgba el cual define un color saturado en 255 y el último valor es una transparencia 1 = 100%  //Gabz Rêveur */
+  font-size:27px; /*font |propiedad| - Define el tamaño del texto a utilizar en dentro del selector//Gabz Rêveur */
+}
+header nav a:hover{
+  color:rgba(255,255,255,.9);
+}
+header nav ul
+{
+  list-style:none; /*list-style: |propiedad| - Define el estilo de lista a utilizar en un tag ul//Gabz Rêveur */
+}
+header #logo  /*Selector de ID |#| - Este selector permite seleccionar especificamente un tag que contiende el ID mencionado despues del hashtag o "gato"//Gabz Rêveur */
+{
+  border:2px dashed #0092bf;
+  widh:200px;  /*width |propiedad| - Define el ancho del elemento, el tamaño puede ser dado en px, pt, %, cm, etc//Gabz Rêveur */
+  heigh:200px;  /*width |propiedad| - Define el ancho del elemento, el tamaño puede ser dado en px, pt, %, cm, etc//Gabz Rêveur */
+}
+header li.menufoo  /*Selector de clase |#| - Este selector permite seleccionar especificamente un tag que contiende la clase mencionado despues del punto "."//Gabz Rêveur */
+{
+  display:inline-block; /*display |propiedad| - Define la forma en que será visualizado el elemento, por defecto los tags miden 100% de ancho, al utilizar display:inline-block; el tamaño será unicamente el necesario por el selector y podrá tomar un lugar en el elemento anterior*/
+  border-right:1px solid white;
+  padding:0 15px;
+
+}
+/*Already in github*/
